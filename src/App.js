@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios'
 import Photo from './Photo'
+import Title from './Title'
 function App() {
 
   const [photoInfo, setPhotoInfo] = useState ([])
@@ -24,6 +25,7 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p> */}
+      <Title copyright = {photoInfo.copyright} date = {photoInfo.date} title = {photoInfo.title}/>
       <Photo photoInfo = {photoInfo.url}/>
     </div>
   );

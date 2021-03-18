@@ -7,10 +7,6 @@ const Photo = props => {
         <div className = 'photocontainer'>
             <img src = {photoInfo}/>
         </div>
-
-
-
-
     )
 
 
