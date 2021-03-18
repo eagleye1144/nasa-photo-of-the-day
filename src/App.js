@@ -3,6 +3,7 @@ import "./App.css";
 import axios from 'axios'
 import Photo from './Photo'
 import Title from './Title'
+import Explanation from './Explanation'
 function App() {
 
   const [photoInfo, setPhotoInfo] = useState ([])
@@ -27,6 +28,7 @@ function App() {
       </p> */}
       <Title copyright = {photoInfo.copyright} date = {photoInfo.date} title = {photoInfo.title}/>
       <Photo photoInfo = {photoInfo.url}/>
+      <Explanation info = {photoInfo.explanation}/>
     </div>
   );
 }
